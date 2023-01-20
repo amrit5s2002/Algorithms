@@ -1,3 +1,4 @@
+from base import test_arrays
 def merge_sort(arr):
     if len(arr)>1:
         # main sequence is devided into two sequence having right most and left most elements 
@@ -43,7 +44,8 @@ def merge_sort(arr):
         return (arr)
             
     
-arr = [12, 31, 25, 8, 32, 17, 40, 42 ]
+arr = test_arrays()
+print('test_array :',arr)
 print(merge_sort(arr))
 
 
